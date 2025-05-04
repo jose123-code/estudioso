@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WEB SOBRE IA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color:white;
+      color:black;
+    }
+
+    header {
+      background: linear-gradient(90deg, #cbec0f, #50982a);
+      color:rgb(#59721e, #1e3c72, #1e3c72);
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    nav {
+      background: #1e3c72;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: yellow;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00e0ff;
+    }
+
+    section {
+      max-width: 2000px;
+      margin: 2rem auto;
+      background:rgb(216, 195, 9);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      color: #1e3c72;
+    }
+
+    section img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+      border-radius: 15px;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1e3c72;
+      color: white;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .music-player {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    button {
+      background-color: purple;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #0b5ff1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    
+    <h1>Inteligencia Artificial</h1>
+    <p>Entendiendo el impacto de la IA en el mundo actual</p>
+    <img src="c:\Users\USUARIO\Downloads\img\gif.gif" alt="inteligencia gif">
+  </header>
+  <section class="music-player">                                                                                           
+    <h2>🎵</h2>
+    <button onclick="toggleMusic()">▶ Reproducir / ⏸ Pausar </button> 
+    <audio id="bg-music" loop>
+      <source src="c:\Users\USUARIO\Downloads\img\Beautiful play background music.mp3" type="audio/mpeg">
+      </audio>
+                                                                       
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Digital</title>
+    <style>
+        
+        #reloj {
+            font-size: 5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+    <div id="reloj"></div>
+
+    <script>
+        function actualizarReloj() {
+            let fecha = new Date();
+            let horas = fecha.getHours().toString().padStart(2, '0');
+            let minutos = fecha.getMinutes().toString().padStart(2, '0');
+            let segundos = fecha.getSeconds().toString().padStart(2, '0');
+
+            let horaActual = `${horas}:${minutos}:${segundos}`;
+            document.getElementById('reloj').textContent = horaActual;
+        }
+
+        setInterval(actualizarReloj, 1000);
+        actualizarReloj(); 
+    </script>
+    
+      
+
+  </section>
+  <nav>
+    <a href="#que es la IA">Que es la IA</a>
+    <a href="#importancia">Importancia</a>
+    <a href="#ventajas">Ventajas</a>
+    <a href="#desventajas">Desventajas</a>
+    <a href="#peligros">Peligros</a>
+    <a href="#aplicaciones">Aplicaciones</a>
+    <a href="#imagenes">Imagenes</a>
+    <a href="#videos">Videos</a>
+    <a href="#historia">Historia</a>
+    <a href="#origenes">Origenes</a>
+    <a href="#tipos de IA">Tipos de IA</a>
+   
+
+  </nav>
+  <section id="¿Que es la IA?">
+    <h2>¿Qué es la inteligencia artificial?</h2>
+    <p>En 1950, el matemático Alan Turing se hizo una pregunta: «¿Pueden pensar las máquinas?». De hecho, esta simple pregunta transformaría el mundo.
+  
+      El artículo de Alan Turing «Computing Machinery and Intelligence» y el consiguiente «Test de Turing» sentaron las bases de la inteligencia artificial, su visión y sus objetivos.
+      
+      De hecho, la inteligencia artificial pretende responder afirmativamente a la pregunta de Alan Turing. Su objetivo es replicar o simular la inteligencia humana en las máquinas.
+      
+      Se trata de un objetivo ambicioso, que también plantea muchos interrogantes y suscita el debate. Por ello, aún no existe una definición única de inteligencia artificial.
+      
+      La descripción de «máquinas inteligentes» no explica qué es realmente la inteligencia artificial ni qué hace que una máquina sea inteligente. En un intento de remediar este problema, Stuart Russell y Peter Norvig publicaron el libro «Artificial Intelligence: A Modern Approach».
+      
+      En ese libro, los dos expertos unifican sus trabajos sobre el tema de los agentes inteligentes en las máquinas. Según ellos, «la IA es el estudio de los agentes que reciben percepciones del entorno y realizan acciones».
+      
+      En su opinión, cuatro enfoques distintos han definido históricamente el campo de la inteligencia artificial: el pensamiento humano, el pensamiento racional, la acción humana y la acción racional.
+      
+      Los dos primeros enfoques se refieren al razonamiento y al procesamiento del pensamiento, mientras que los otros dos se refieren al comportamiento. En su libro, Norvig y Russell se centran principalmente en los agentes racionales capaces de actuar para conseguir el mejor resultado.
+      
+      Por su parte, Patrick Winston, profesor de inteligencia artificial del MIT, define la IA como «algoritmos activados por restricciones, expuestos por representaciones que soportan modelos que vinculan el pensamiento, la percepción y la acción».
+      
+      Otra definición moderna describe la IA como «máquinas que responden a simulaciones como los humanos, con capacidad de contemplación, juicio e intención». Estos sistemas son capaces de «tomar decisiones que normalmente requieren un nivel humano de conocimiento». Tienen tres cualidades que constituyen la esencia de la inteligencia artificial: intencionalidad, inteligencia y adaptabilidad.
+      
+      Estas diferentes definiciones pueden parecer abstractas y complejas. Sin embargo, ayudan a establecer la inteligencia artificial como una ciencia informática.
+      
+      En 2017, durante la Japan AI Experience, el CEO de DataRobot, Jeremy Achin, dio su propia definición moderna y con un toque de humor de la IA : «La inteligencia artificial es un sistema informático capaz de realizar tareas que normalmente requieren inteligencia humana… muchos de estos sistemas de IA se basan en el Machine Learning, otros en el Deep Learning y otros en cosas muy aburridas como las reglas«.</p>
+      <img src="c:\Users\USUARIO\Downloads\img\Imagen de WhatsApp 2025-05-03 a las 14.49.36_1e948f1a.jpg">
+    </section>
+  <section id="importancia">
+   
+
+    <h2>¿ por qué es importante?</h2>
+    <p>La Inteligencia Artificial (IA) permite a las máquinas simular capacidades humanas como el razonamiento y el aprendizaje. Es una tecnología clave para el futuro.</p>
+    <p>es fundamental porque automatiza tareas repetitivas, mejora la toma de decisiones basadas en datos, y ofrece soluciones innovadoras en diversos campos como la salud, la educación y la industria. La IA permite a las máquinas simular aspectos de la inteligencia humana, como la percepción, la resolución de problemas y la interacción lingüística. </p>
+    <h2>Aquí hay una visión más detallada de la importancia de la IA:</h2>
+    
+    <p>1. Automatización y Eficiencia:</p>
+    <li>La IA automatiza tareas que antes realizaban los humanos, liberando a las personas para actividades más creativas e intelectuales. </li>
+    <li>Permite que las máquinas realicen tareas repetitivas con mayor rapidez y precisión, aumentando la eficiencia y la productividad. </li>
+    <li>Mejora la gestión de inventarios, optimiza procesos logísticos y facilita la detección temprana de fallos en maquinaria. </li>
+    <p>2. Toma de Decisiones:</p>
+    <li>La IA procesa grandes cantidades de datos y proporciona información valiosa en tiempo real para tomar decisiones más informadas. </li>
+    <li>Ayuda a identificar patrones, predecir tendencias y tomar decisiones más estratégicas en diversos sectores, como las finanzas y la gestión empresarial. </li>
+    <li>Facilita la detección de fraudes, la gestión de riesgos y la optimización de inversiones. </li>
+    <p>3. Soluciones Innovadoras:</p>
+    <li>La IA impulsa la innovación en la investigación científica, permitiendo analizar grandes conjuntos de datos y acelerar el descubrimiento de nuevas tecnologías y conocimientos. </li>
+    <li>Mejora la atención médica a través de la detección temprana de enfermedades, el desarrollo de diagnósticos más precisos y la personalización de tratamientos. </li>
+    <li>Transforma la educación, personalizando el aprendizaje, adaptándose a las necesidades individuales de cada estudiante y facilitando el acceso a la información. </li>
+    <li>Impulsa el desarrollo de vehículos autónomos, sistemas de seguridad inteligentes y soluciones para combatir el cambio climático. </li>
+    <li>En el comercio, la IA permite ofrecer recomendaciones personalizadas a los consumidores, optimizar productos y mejorar la planificación del inventario. </li>
+    <p>4. Impacto Social:</p>
+    <li>La IA puede contribuir a mejorar la calidad de vida de las personas, abordando desafíos globales como la salud, la educación y el cambio climático. </li>
+    <li>Facilita la interacción entre humanos y máquinas, mejorando la experiencia del usuario y la accesibilidad a la tecnología. </li>
+    <img src="c:\Users\USUARIO\Downloads\img\principal.jpg" alt="Imagen de inteligencia artificial">
+  </section>
+  <section id="historia">
+    <h2>Historia</h2>
+    <p> La inteligencia artificial nacio en los años 50,con la idea de crear maquinas que imiten la inteligencia humana. </p>
+    <p>A lo largo del tiempo, ha tenido avances y retrocesos,hasta llegar a la actualidad, donde gracia a la tecnologia y los datos, forma parte de nuestra vida diaria en areas como la salud, la educasion y los servicios digitales</p>
+    <p>La historia de la inteligencia artificial (IA) se puede dividir en varios periodos clave. Comenzó con la noción de máquinas pensantes en la antigüedad, pasando por la formalización matemática de la lógica en el siglo XIX, y llegando a la conferencia de Dartmouth en 1956, considerada el nacimiento oficial de la IA. Posteriormente, se han desarrollado los primeros sistemas basados en reglas, el lenguaje de programación LISP, y la IA ha experimentado un renacimiento con el aprendizaje automático y las redes neuronales profundas. </p>
+    
+    
+    </video>
+    <video width="640" height="360" controls>
+      <source src="c:\Users\USUARIO\Downloads\Historia de la Inteligencia Artificial.mp4" type="video/mp4">
+  </section>
+
+<section>
+  <section id="origenes">
+    <h2>Origenes y desarrollo temprano(antes de 1950)</h2>
+    <h1>Antigüedad:</h1>
+    <p>El deseo de crear máquinas pensantes ha existido desde la antigüedad, con mitos y artefactos que sugieren la búsqueda de inteligencia artificial. </p>
+<h1>Siglo XIX:</h1>
+<p>El matemático George Boole sistematizó el razonamiento lógico, sentando las bases para la lógica matemática que se utilizaría en la IA. </p>
+<h1>1943:</h1> 
+<p>Warren McCullough y Walter Pitts publicaron "A Logical Calculus of Ideas Immanent in Nervous Activity", el primer modelo matemático de una red neuronal. </p>
+ <h1>1950:</h1> 
+ <p>Alan Turing propuso el "Test de Turing" para evaluar la capacidad de una máquina de pensar, según Wired https://es.wired.com/articulos/historia-de-la-inteligencia-artificial-en-10-fechas-clave-. </p>
+<h1>El nacimiento de la IA y los primeros sistemas (1950-1970):</h1>
+<h1>1956:</h1>
+<p>La conferencia de Dartmouth, organizada por John McCarthy, Marvin Minsky, Nathaniel Rochester y Claude Shannon, es considerada el nacimiento oficial de la IA. </p>
+<h1>Década de 1960:</h1>
+<p>Desarrollo de LISP, el primer lenguaje de programación de IA, y los primeros sistemas basados en reglas. </p>
+<h1>El auge de la IA y el "invierno de la IA" (1970-1990):</h1>
+<h1>Décadas de 1970 y 1980:</h1>
+<p>Desarrollo de sistemas expertos, pero la IA no logró cumplir las expectativas iniciales, lo que llevó al "invierno de la IA". </p>
+<h1>El renacimiento de la IA y el aprendizaje automático (1990-presente):</h1>
+<h1>Década de 1990:</h1>
+<p>Avances en la potencia informática, el almacenamiento de datos y la disponibilidad de grandes cantidades de datos impulsaron el desarrollo de algoritmos de aprendizaje automático. </p>
+<h1>Finales de 1990 y principios de 2000:</h1>
+<p>La IA comenzó a penetrar en la vida cotidiana con sistemas de recomendación, reconocimiento de voz y el desarrollo de Deep Blue, que derrotó al campeón mundial de ajedrez. </p>
+<h1>Década de 2010:</h1>
+<p>El aprendizaje profundo  las redes neuronales profundas revolucionaron la IA, con avances en el reconocimiento de imágenes y voz, el procesamiento del lenguaje natural y los sistemas autónomos. </p>
+<h1>Década de 2020:</h1>
+<p>La IA se ha integrado en diversas áreas, desde los asistentes virtuales hasta los coches autónomos, afirma Esneca Business School.</p>
+<h1>Resumen</h1>
+<p>En resumen: La historia de la IA ha sido una evolución continua, desde la especulación inicial hasta la implementación en la vida cotidiana. Se ha caracterizado por periodos de auge y declive, pero el desarrollo de nuevas tecnologías y la disponibilidad de grandes cantidades de datos han impulsado su crecimiento y desarrollo. 
+  Historia de la inteligencia artificial - Iberdrola
+  John McCarthy acuñó en 1956 el término “inteligencia artificial” e impulsó en la década de 1960 el desarrolló del primer lenguaje ...
+  Iberdrola
+  
+  Inteligencia artificial : definición, historia, usos, peligros
+  La historia de la inteligencia artificial comenzó en 1943 con la publicación del artículo «A Logical Calculus of Ideas Immanent in...
+  
+  DataScientest
+  
+  Historia de la inteligencia artificial - Wikipedia
+  Historia de la inteligencia artificial * La historia de la inteligencia artificial (IA) comenzó en la antigüedad, con mitos.
+  </p>
+
+</section>
+  <section id="ventajas">
+    <h2>Ventajas de la IA</h2>
+    <ul>
+      <li>Procesamiento de datos a gran velocidad.</li>
+      <li>Automatización de tareas repetitivas.</li>
+      <li>Reducción de errores humanos.</li>
+      <li>Mejoras en diagnósticos médicos y análisis financieros.</li>
+      <li>Capacidad de aprendizaje continuo (machine learning).</li>
+    </ul>
+    <img src="c:\Users\USUARIO\Downloads\img\1.jpg" alt="IA beneficiosa">
+  </section>
+
+  <section id="desventajas">
+    <h2>Desventajas de la IA</h2>
+    <ul>
+      <li>Riesgo de pérdida de empleos.</li>
+      <li>Falta de ética en algunas implementaciones.</li>
+      <li>Sesgo en algoritmos mal entrenados.</li>
+      <li>Riesgo de uso indebido (por ejemplo, vigilancia masiva).</li>
+    </ul>
+    <img src="c:\Users\USUARIO\Downloads\img\2.jpeg" alt="IA con riesgos">
+  </section>
+
+  <section id="peligros">
+  <h2>Los peligros de la inteligencia artificial</h2>
+<li>La inteligencia artificial ofrece muchas promesas para la humanidad, pero también podría representar una amenaza más peligrosa que la bomba nuclear.</li>
+<li>Con su capacidad de aprender y evolucionar de forma autónoma, la IA podría superar algún día la inteligencia humana. Entonces podría decidir volverse contra sus creadores.</li>
+<li>Este oscuro presagio puede parecer sacado directamente de una película de ciencia ficción, pero es una posibilidad muy real. Destacados expertos como Stephen Hawking, Elon Musk o Bill Gates ya han dado la voz de alarma sobre la inteligencia artificial.</li>
+<li>Según ellos, la IA representa un riesgo inminente e inevitable en los próximos años. Por eso piden a los gobiernos que regulen este campo para que se desarrolle de forma ética y segura. Más de un centenar expertos ha pedido también a Naciones Unidas que prohíba los «robots asesinos» y otras armas militares autónomas.</li>
+<li>Sin embargo, otros expertos creen que el futuro de la inteligencia artificial depende únicamente de cómo decidan utilizarla los humanos. Incluso una IA aparentemente inofensiva podría manipularse y utilizarse de forma malintencionada. Ya podemos verlo con el incremento de los «DeepFakes»: vídeos falsos creados mediante Deep Learning para mostrar a una persona en una situación comprometida.</li>
+<li>La inteligencia artificial seguirá desarrollándose a gran velocidad en los próximos años. La humanidad es quien debe decidir qué dirección tomará su desarrollo.</li>
+
+
+
+</section>
+
+  <section id="aplicaciones">
+    <h2>Aplicaciones actuales</h2>
+    <p>La IA se encuentra en asistentes virtuales
+      <li>Autos</li>
+      <li>Autonomos</li> 
+      <li> robots</li> 
+      <li>medicina</li>
+      <li>educación</li> 
+      <p>muchas áreas más.</p>
+      <h2>Aplicaciones y casos prácticos de la inteligencia artificial</h2>
+      <p>La inteligencia artificial tiene muchos propósitos, como el aprendizaje, el razonamiento y la percepción. Se utiliza en todos los sectores, hasta el punto en que las aplicaciones son infinitas e imposibles de enumerar con exhaustividad.</p>
+    <p>En el ámbito de la salud, se utiliza para desarrollar tratamientos personalizados, descubrir nuevos fármacos o analizar imágenes médicas como radiografías y resonancias magnéticas. Los asistentes virtuales también pueden ayudar a los pacientes y recordarles que se tomen sus pastillas o que hagan ejercicio para mantenerse en forma.</p>
+    <p>En el ámbito de la salud, se utiliza para desarrollar tratamientos personalizados, descubrir nuevos fármacos o analizar imágenes médicas como radiografías y resonancias magnéticas. Los asistentes virtuales también pueden ayudar a los pacientes y recordarles que se tomen sus pastillas o que hagan ejercicio para mantenerse en forma.</p>
+    <p>El sector del comercio minorista está utilizando la IA para ofrecer recomendaciones y publicidad personalizadas a los clientes. También puede utilizarse para optimizar la disposición de los productos o gestionar mejor el inventario.</p>
+     <p>El sector del comercio minorista está utilizando la IA para ofrecer recomendaciones y publicidad personalizadas a los clientes. También puede utilizarse para optimizar la disposición de los productos o gestionar mejor el inventario.</p>
+    <p>En las fábricas, la inteligencia artificial analiza los datos de los equipos IoT para predecir la carga y la demanda mediante Deep Learning. También puede anticiparse a posibles fallos de funcionamiento e intervenir en una fase temprana.</p>
+    <p>Los bancos, por su parte, están utilizando la IA para prevenir y detectar el fraude. La tecnología también puede utilizarse para comprobar si un cliente podrá pagar el crédito que solicita y para automatizar las tareas de gestión de datos.</p>
+    <p>Estos son solo algunos ejemplos de sectores que utilizan la inteligencia artificial. Como puede verse, esta revolucionaria tecnología está llamada a revolucionar todos los sectores de actividad en los próximos años.</p>
+    <img src="c:\Users\USUARIO\Downloads\img\3.jpeg" alt="Aplicaciones de IA">
+  </section>
+
+  <section id="tipos de IA">
+    <h2>Son Tipos de Inteligencias Artificiales</h2>
+    
+    <h2>Se Clasifican en:</h2>
+   <h1>1.Generadoras de texto</h1>
+   <li>Blackbox</li>
+<li>Character AI</li>
+<li>DeepSeepk</li>
+<li>Liner</li>
+<h1>2.Herramientas para el contexto academico</h1>
+<li>Brainly</li>
+<li>Julius</li>
+<li>Scite</li>
+<h1>3.Generadores de imagenes y video</h1>
+<li>Civit AI</li>
+<li>Craiyon</li>
+<li>Leonardo AI</li>
+<li>pixelcut</li>
+<h1>4.Repositorios de Herramientas</h1>
+<li>Aifindy</li>
+<li>Creati</li>
+<li>ChatPDF</li>
+<li>LM Arena</li>
+<li>Futurepedia</li>
+  </section>
+
+
+  <section id="imagenes">
+    <h2>Estas son algunas imagenes</h2>
+<img src="c:\Users\USUARIO\Downloads\img\5.jpeg">
+<img src="c:\Users\USUARIO\Downloads\img\4.jpeg">
+
+<img src="c:\Users\USUARIO\Downloads\img\6.jpeg">
+<img src="c:\Users\USUARIO\Downloads\img\7.jpeg">
+<img src="c:\Users\USUARIO\Downloads\img\8.jpeg">
+<img src="c:\Users\USUARIO\Downloads\img\9.jpeg">
+<img src="c:\Users\USUARIO\Downloads\img\10.jpeg">
+<section id = "videos">
+  <h2>Videos sobre la IA</h2>
+</video>
+<video width="640" height="360" controls>
+  <source src="c:\Users\USUARIO\Downloads\Qué es y cómo funciona la INTELIGENCIA ARTIFICIAL_.mp4">
+</video>
+</video>
+<video width="640" height="360" controls>
+  <source src="c:\Users\USUARIO\Downloads\Qué es la inteligencia artificial_.mp4">
+</video>
+  <section id="conclusiones">
+    <h2>Conclusiónes</h2>
+    <p>La IA ofrece enormes oportunidades y desafíos. Usada con ética y responsabilidad, puede mejorar nuestro futuro en todos los niveles.</p>
+    <p>La IA nos permite mejorar nuestras habilidades y nos permite ahorrarnos trabajo en hacer algo que nos costaria hacerlo solo con nuestros conocimientos</p>
+    <p>La IA redefine industrias y formas de vida.</p>
+    <img src="c:\Users\USUARIO\Downloads\img\aplicasiones.jpeg">
+  </section>
+ 
+
+
+  <footer>
+  Página sobre Inteligencia Artificial: VISCA BARCA💖.
+  </footer>
+
+  <script>
+    function toggleMusic() {
+      const music = document.getElementById("bg-music");
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
+ 
+</body>
+</html>
